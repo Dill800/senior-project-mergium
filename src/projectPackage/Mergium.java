@@ -2060,6 +2060,8 @@ public class Mergium extends Application {
 
 		clearGridPane(bottomPane);
 
+		playerCreature.setHealth(playerCreature.getMaxHealth());
+
 		int reward = ((int) (Math.random() * 2) + 2) * 50 + (enemyCreature.getLevel() - 5) * 50;
 		int experience = (enemyCreature.getLevel() - 4) * 200;
 
